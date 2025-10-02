@@ -30,29 +30,33 @@
 Создаём манифест [deployment.yaml](https://github.com/Liberaty/k8s_hw_04/blob/main/deployment.yaml) с двумя контейнерами и тремя репликами
 #
 ![1.1.png](https://github.com/Liberaty/k8s_hw_04/blob/main/img/1.1.png?raw=true)
-
+#
 2. Создать Service, который обеспечит доступ внутри кластера до контейнеров приложения из п.1 по порту 9001 — nginx 80, по 9002 — multitool 8080.
 #
 ***Ответ***
 Создаём манифест [service.yaml](https://github.com/Liberaty/k8s_hw_04/blob/main/service.yaml) с необходимыми портами
 #
 ![1.2.png](https://github.com/Liberaty/k8s_hw_04/blob/main/img/1.2.png?raw=true)
-
+#
 3. Создать отдельный Pod с приложением multitool и убедиться с помощью `curl`, что из пода есть доступ до приложения из п.1 по разным портам в разные контейнеры.
 #
 ***Ответ***
 Создаём манифест [multitool.yaml](https://github.com/Liberaty/k8s_hw_04/blob/main/multitool.yaml) для отдельного Pod'a с приложением multitool, чтобы убедиться с помощью curl, что из пода есть доступ до приложения по портам 9001 и 9002 в разные контейнеры.
 #
 ![1.3.png](https://github.com/Liberaty/k8s_hw_04/blob/main/img/1.3.png?raw=true)
-
+#
 4. Продемонстрировать доступ с помощью `curl` по доменному имени сервиса.
 #
 ***Ответ***
 #
 ![1.4.png](https://github.com/Liberaty/k8s_hw_04/blob/main/img/1.4.png?raw=true)
-
+#
 5. Предоставить манифесты Deployment и Service в решении, а также скриншоты или вывод команды п.4.
-
+#
+***Ответ***
+#
+Все ссылки предоставлены выше.
+#
 ------
 
 ### Задание 2. Создать Service и обеспечить доступ к приложениям снаружи кластера
